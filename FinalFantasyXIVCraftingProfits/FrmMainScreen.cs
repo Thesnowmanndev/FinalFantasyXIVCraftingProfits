@@ -10,25 +10,31 @@ namespace FinalFantasyXIVCraftingProfits
             InitializeComponent();
         }
 
-        private void lblCreditLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LblCreditLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits");
         }
 
-        private void btn2MaterialCost_Click(object sender, EventArgs e)
+        private void Btn2MaterialCost_Click(object sender, EventArgs e)
         {
-            Form frmTwoMaterialCost = new FrmTwoMaterialCost();
-            frmTwoMaterialCost.Show();
+            Form frmTwoMaterials = new FrmTwoMaterials();
+            frmTwoMaterials.Show();
         }
 
-        private void lblSuggestLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LblSuggestLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("mailto:thesnowmanndev@gmail.com?subject=FFXIV_Calculator_Feature_Request");
         }
 
-        private void lblReportLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LblReportLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits/issues/");
+        }
+
+        private void BtnOneMaterialCalculator_Click(object sender, EventArgs e)
+        {
+            Form frmOneMaterial = new FrmOneMaterial();
+            frmOneMaterial.Show();
         }
     }
 }

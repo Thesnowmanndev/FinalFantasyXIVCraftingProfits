@@ -88,11 +88,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2MaterialTotalProfit.cs">
+    <Compile Include="FrmOneMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="2MaterialTotalProfit.Designer.cs">
-      <DependentUpon>2MaterialTotalProfit.cs</DependentUpon>
+    <Compile Include="FrmOneMaterial.Designer.cs">
+      <DependentUpon>FrmOneMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTwoMaterials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTwoMaterials.Designer.cs">
+      <DependentUpon>FrmTwoMaterials.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMainScreen.cs">
       <SubType>Form</SubType>
@@ -102,8 +108,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="2MaterialTotalProfit.resx">
-      <DependentUpon>2MaterialTotalProfit.cs</DependentUpon>
+    <EmbeddedResource Include="FrmOneMaterial.resx">
+      <DependentUpon>FrmOneMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTwoMaterials.resx">
+      <DependentUpon>FrmTwoMaterials.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMainScreen.resx">
       <DependentUpon>FrmMainScreen.cs</DependentUpon>

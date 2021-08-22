@@ -1,7 +1,7 @@
 ﻿
 namespace FinalFantasyXIVCraftingProfits
 {
-    partial class FrmTwoMaterialCost
+    partial class FrmTwoMaterials
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@ namespace FinalFantasyXIVCraftingProfits
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTwoMaterialCost));
-            this.g_2mats = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTwoMaterials));
+            this.gpTwoMaterials = new System.Windows.Forms.GroupBox();
             this.txtShard2Amount = new System.Windows.Forms.TextBox();
             this.txtShard2Cost = new System.Windows.Forms.TextBox();
             this.txtShard1Amount = new System.Windows.Forms.TextBox();
@@ -58,40 +58,40 @@ namespace FinalFantasyXIVCraftingProfits
             this.btnExit = new System.Windows.Forms.Button();
             this.lblCredits = new System.Windows.Forms.Label();
             this.lblCreditLink = new System.Windows.Forms.LinkLabel();
-            this.g_2mats.SuspendLayout();
+            this.gpTwoMaterials.SuspendLayout();
             this.SuspendLayout();
             // 
-            // g_2mats
+            // gpTwoMaterials
             // 
-            this.g_2mats.Controls.Add(this.txtShard2Amount);
-            this.g_2mats.Controls.Add(this.txtShard2Cost);
-            this.g_2mats.Controls.Add(this.txtShard1Amount);
-            this.g_2mats.Controls.Add(this.txtShard1Cost);
-            this.g_2mats.Controls.Add(this.txtMat1Cost);
-            this.g_2mats.Controls.Add(this.txtMat1Amount);
-            this.g_2mats.Controls.Add(this.txtMat2Cost);
-            this.g_2mats.Controls.Add(this.txtMat2Amount);
-            this.g_2mats.Controls.Add(this.txtMaterialCost);
-            this.g_2mats.Controls.Add(this.txtISellsFor);
-            this.g_2mats.Controls.Add(this.txtTotalProfit);
-            this.g_2mats.Controls.Add(this.lblMat1Cost);
-            this.g_2mats.Controls.Add(this.lblMat1Amount);
-            this.g_2mats.Controls.Add(this.lblMat2Cost);
-            this.g_2mats.Controls.Add(this.lblMat2Amount);
-            this.g_2mats.Controls.Add(this.lblShard1Cost);
-            this.g_2mats.Controls.Add(this.lblShard1Amount);
-            this.g_2mats.Controls.Add(this.lblShard2Cost);
-            this.g_2mats.Controls.Add(this.lblShard2Amount);
-            this.g_2mats.Controls.Add(this.lblMatTotalCost);
-            this.g_2mats.Controls.Add(this.lblISellsFor);
-            this.g_2mats.Controls.Add(this.lblTotalProfit);
-            this.g_2mats.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.g_2mats.Location = new System.Drawing.Point(12, 12);
-            this.g_2mats.Name = "g_2mats";
-            this.g_2mats.Size = new System.Drawing.Size(426, 429);
-            this.g_2mats.TabIndex = 0;
-            this.g_2mats.TabStop = false;
-            this.g_2mats.Text = "2 Material Cost";
+            this.gpTwoMaterials.Controls.Add(this.txtShard2Amount);
+            this.gpTwoMaterials.Controls.Add(this.txtShard2Cost);
+            this.gpTwoMaterials.Controls.Add(this.txtShard1Amount);
+            this.gpTwoMaterials.Controls.Add(this.txtShard1Cost);
+            this.gpTwoMaterials.Controls.Add(this.txtMat1Cost);
+            this.gpTwoMaterials.Controls.Add(this.txtMat1Amount);
+            this.gpTwoMaterials.Controls.Add(this.txtMat2Cost);
+            this.gpTwoMaterials.Controls.Add(this.txtMat2Amount);
+            this.gpTwoMaterials.Controls.Add(this.txtMaterialCost);
+            this.gpTwoMaterials.Controls.Add(this.txtISellsFor);
+            this.gpTwoMaterials.Controls.Add(this.txtTotalProfit);
+            this.gpTwoMaterials.Controls.Add(this.lblMat1Cost);
+            this.gpTwoMaterials.Controls.Add(this.lblMat1Amount);
+            this.gpTwoMaterials.Controls.Add(this.lblMat2Cost);
+            this.gpTwoMaterials.Controls.Add(this.lblMat2Amount);
+            this.gpTwoMaterials.Controls.Add(this.lblShard1Cost);
+            this.gpTwoMaterials.Controls.Add(this.lblShard1Amount);
+            this.gpTwoMaterials.Controls.Add(this.lblShard2Cost);
+            this.gpTwoMaterials.Controls.Add(this.lblShard2Amount);
+            this.gpTwoMaterials.Controls.Add(this.lblMatTotalCost);
+            this.gpTwoMaterials.Controls.Add(this.lblISellsFor);
+            this.gpTwoMaterials.Controls.Add(this.lblTotalProfit);
+            this.gpTwoMaterials.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpTwoMaterials.Location = new System.Drawing.Point(12, 12);
+            this.gpTwoMaterials.Name = "gpTwoMaterials";
+            this.gpTwoMaterials.Size = new System.Drawing.Size(426, 429);
+            this.gpTwoMaterials.TabIndex = 0;
+            this.gpTwoMaterials.TabStop = false;
+            this.gpTwoMaterials.Text = "Two Materials Required";
             // 
             // txtShard2Amount
             // 
@@ -343,7 +343,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblCreditLink.Text = "https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits";
             this.lblCreditLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblCreditLink_LinkClicked);
             // 
-            // FrmTwoMaterialCost
+            // FrmTwoMaterials
             // 
             this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,15 +356,15 @@ namespace FinalFantasyXIVCraftingProfits
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
-            this.Controls.Add(this.g_2mats);
+            this.Controls.Add(this.gpTwoMaterials);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FrmTwoMaterialCost";
+            this.Name = "FrmTwoMaterials";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Final Fantasy XIV - Crafting Profits";
-            this.g_2mats.ResumeLayout(false);
-            this.g_2mats.PerformLayout();
+            this.gpTwoMaterials.ResumeLayout(false);
+            this.gpTwoMaterials.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,7 +372,7 @@ namespace FinalFantasyXIVCraftingProfits
 
         #endregion
 
-        private System.Windows.Forms.GroupBox g_2mats;
+        private System.Windows.Forms.GroupBox gpTwoMaterials;
         private System.Windows.Forms.Label lblISellsFor;
         private System.Windows.Forms.Label lblTotalProfit;
         private System.Windows.Forms.Label lblMatTotalCost;

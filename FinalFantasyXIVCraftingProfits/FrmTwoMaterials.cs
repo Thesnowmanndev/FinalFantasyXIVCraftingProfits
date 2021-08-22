@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace FinalFantasyXIVCraftingProfits
 {
-    public partial class FrmTwoMaterialCost : Form
+    public partial class FrmTwoMaterials : Form
     {
         private int _materialOneCost;
         private int _materialOneAmountNeeded;
@@ -21,7 +21,7 @@ namespace FinalFantasyXIVCraftingProfits
         private string _matTotalCostFormatted;
         private string _totalProfitFormatted;
 
-        public FrmTwoMaterialCost()
+        public FrmTwoMaterials()
         {
             InitializeComponent();
         }
