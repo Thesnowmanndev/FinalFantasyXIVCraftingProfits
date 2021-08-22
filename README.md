@@ -2,7 +2,11 @@
 Simple Crafting Calculator for Discipline of Hand crafts in the MMORPG Final Fantasy XIV made with Visual Basic &amp; C#
 
 ## About 
-The goal of this project was to create an application where I can input costs for materials, amount needed, and how much the item sells for and have it calculate the suspected total profit to help decide if it is worth it. Currently the screens I have completed are:
+The goal of this project was to create an application where I can input costs for materials, amount needed, and how much the item sells for and have it calculate the suspected total profit to help decide if it is worth it. 
+
+Technically, due to my error catch methods you could simply just open the Five Materials Screen and use it regardless of there are less than 5 materials as my error catch method will detect that it is null and insert a 0 for the value. So if you wanted to be "lazy" you could use it that way. When I started developing the application I didn't think about just making one screen regardless of how many materials. Lesson learned.
+
+Currently the screens I have completed are:
 
 :x: Main Screen
 
