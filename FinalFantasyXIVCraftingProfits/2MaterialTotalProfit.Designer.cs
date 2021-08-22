@@ -1,7 +1,7 @@
 ﻿
 namespace FinalFantasyXIVCraftingProfits
 {
-    partial class frmTwoMaterialCost
+    partial class FrmTwoMaterialCost
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,12 @@ namespace FinalFantasyXIVCraftingProfits
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTwoMaterialCost));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTwoMaterialCost));
             this.g_2mats = new System.Windows.Forms.GroupBox();
+            this.txtShard2Amount = new System.Windows.Forms.TextBox();
+            this.txtShard2Cost = new System.Windows.Forms.TextBox();
+            this.txtShard1Amount = new System.Windows.Forms.TextBox();
+            this.txtShard1Cost = new System.Windows.Forms.TextBox();
             this.txtMat1Cost = new System.Windows.Forms.TextBox();
             this.txtMat1Amount = new System.Windows.Forms.TextBox();
             this.txtMat2Cost = new System.Windows.Forms.TextBox();
@@ -42,20 +46,18 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblMat1Amount = new System.Windows.Forms.Label();
             this.lblMat2Cost = new System.Windows.Forms.Label();
             this.lblMat2Amount = new System.Windows.Forms.Label();
+            this.lblShard1Cost = new System.Windows.Forms.Label();
+            this.lblShard1Amount = new System.Windows.Forms.Label();
+            this.lblShard2Cost = new System.Windows.Forms.Label();
+            this.lblShard2Amount = new System.Windows.Forms.Label();
             this.lblMatTotalCost = new System.Windows.Forms.Label();
             this.lblISellsFor = new System.Windows.Forms.Label();
             this.lblTotalProfit = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.lblShard1Cost = new System.Windows.Forms.Label();
-            this.lblShard1Amount = new System.Windows.Forms.Label();
-            this.lblShard2Cost = new System.Windows.Forms.Label();
-            this.lblShard2Amount = new System.Windows.Forms.Label();
-            this.txtShard1Cost = new System.Windows.Forms.TextBox();
-            this.txtShard1Amount = new System.Windows.Forms.TextBox();
-            this.txtShard2Cost = new System.Windows.Forms.TextBox();
-            this.txtShard2Amount = new System.Windows.Forms.TextBox();
+            this.lblCredits = new System.Windows.Forms.Label();
+            this.lblCreditLink = new System.Windows.Forms.LinkLabel();
             this.g_2mats.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +92,34 @@ namespace FinalFantasyXIVCraftingProfits
             this.g_2mats.TabIndex = 0;
             this.g_2mats.TabStop = false;
             this.g_2mats.Text = "2 Material Cost";
+            // 
+            // txtShard2Amount
+            // 
+            this.txtShard2Amount.Location = new System.Drawing.Point(282, 238);
+            this.txtShard2Amount.Name = "txtShard2Amount";
+            this.txtShard2Amount.Size = new System.Drawing.Size(44, 23);
+            this.txtShard2Amount.TabIndex = 8;
+            // 
+            // txtShard2Cost
+            // 
+            this.txtShard2Cost.Location = new System.Drawing.Point(282, 211);
+            this.txtShard2Cost.Name = "txtShard2Cost";
+            this.txtShard2Cost.Size = new System.Drawing.Size(110, 23);
+            this.txtShard2Cost.TabIndex = 7;
+            // 
+            // txtShard1Amount
+            // 
+            this.txtShard1Amount.Location = new System.Drawing.Point(282, 176);
+            this.txtShard1Amount.Name = "txtShard1Amount";
+            this.txtShard1Amount.Size = new System.Drawing.Size(44, 23);
+            this.txtShard1Amount.TabIndex = 6;
+            // 
+            // txtShard1Cost
+            // 
+            this.txtShard1Cost.Location = new System.Drawing.Point(282, 149);
+            this.txtShard1Cost.Name = "txtShard1Cost";
+            this.txtShard1Cost.Size = new System.Drawing.Size(110, 23);
+            this.txtShard1Cost.TabIndex = 5;
             // 
             // txtMat1Cost
             // 
@@ -186,14 +216,55 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblMat2Amount.TabIndex = 4;
             this.lblMat2Amount.Text = "Material 2 Amount Needed:";
             // 
+            // lblShard1Cost
+            // 
+            this.lblShard1Cost.AutoSize = true;
+            this.lblShard1Cost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblShard1Cost.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShard1Cost.Location = new System.Drawing.Point(15, 153);
+            this.lblShard1Cost.Name = "lblShard1Cost";
+            this.lblShard1Cost.Size = new System.Drawing.Size(141, 17);
+            this.lblShard1Cost.TabIndex = 11;
+            this.lblShard1Cost.Text = "Shard 1 Cost Each:";
+            // 
+            // lblShard1Amount
+            // 
+            this.lblShard1Amount.AutoSize = true;
+            this.lblShard1Amount.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShard1Amount.Location = new System.Drawing.Point(20, 180);
+            this.lblShard1Amount.Name = "lblShard1Amount";
+            this.lblShard1Amount.Size = new System.Drawing.Size(182, 15);
+            this.lblShard1Amount.TabIndex = 12;
+            this.lblShard1Amount.Text = "Shard 1 Amount Needed:";
+            // 
+            // lblShard2Cost
+            // 
+            this.lblShard2Cost.AutoSize = true;
+            this.lblShard2Cost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblShard2Cost.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShard2Cost.Location = new System.Drawing.Point(15, 215);
+            this.lblShard2Cost.Name = "lblShard2Cost";
+            this.lblShard2Cost.Size = new System.Drawing.Size(144, 17);
+            this.lblShard2Cost.TabIndex = 13;
+            this.lblShard2Cost.Text = "Shard 2 Cost Each:";
+            // 
+            // lblShard2Amount
+            // 
+            this.lblShard2Amount.AutoSize = true;
+            this.lblShard2Amount.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShard2Amount.Location = new System.Drawing.Point(20, 242);
+            this.lblShard2Amount.Name = "lblShard2Amount";
+            this.lblShard2Amount.Size = new System.Drawing.Size(185, 15);
+            this.lblShard2Amount.TabIndex = 14;
+            this.lblShard2Amount.Text = "Shard 2 Amount Needed:";
+            // 
             // lblMatTotalCost
             // 
             this.lblMatTotalCost.AutoSize = true;
-            this.lblMatTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMatTotalCost.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMatTotalCost.Location = new System.Drawing.Point(15, 366);
             this.lblMatTotalCost.Name = "lblMatTotalCost";
-            this.lblMatTotalCost.Size = new System.Drawing.Size(164, 17);
+            this.lblMatTotalCost.Size = new System.Drawing.Size(162, 15);
             this.lblMatTotalCost.TabIndex = 5;
             this.lblMatTotalCost.Text = "Material Total Cost:";
             // 
@@ -211,11 +282,10 @@ namespace FinalFantasyXIVCraftingProfits
             // lblTotalProfit
             // 
             this.lblTotalProfit.AutoSize = true;
-            this.lblTotalProfit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTotalProfit.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalProfit.Location = new System.Drawing.Point(15, 399);
             this.lblTotalProfit.Name = "lblTotalProfit";
-            this.lblTotalProfit.Size = new System.Drawing.Size(111, 18);
+            this.lblTotalProfit.Size = new System.Drawing.Size(109, 16);
             this.lblTotalProfit.TabIndex = 6;
             this.lblTotalProfit.Text = "TOTAL PROFIT";
             // 
@@ -232,6 +302,7 @@ namespace FinalFantasyXIVCraftingProfits
             // 
             // btnClear
             // 
+            this.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClear.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(156, 450);
             this.btnClear.Name = "btnClear";
@@ -252,94 +323,50 @@ namespace FinalFantasyXIVCraftingProfits
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // lblShard1Cost
+            // lblCredits
             // 
-            this.lblShard1Cost.AutoSize = true;
-            this.lblShard1Cost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblShard1Cost.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShard1Cost.Location = new System.Drawing.Point(15, 153);
-            this.lblShard1Cost.Name = "lblShard1Cost";
-            this.lblShard1Cost.Size = new System.Drawing.Size(102, 17);
-            this.lblShard1Cost.TabIndex = 11;
-            this.lblShard1Cost.Text = "Shard 1 Cost:";
+            this.lblCredits.AutoSize = true;
+            this.lblCredits.Location = new System.Drawing.Point(98, 505);
+            this.lblCredits.Name = "lblCredits";
+            this.lblCredits.Size = new System.Drawing.Size(249, 13);
+            this.lblCredits.TabIndex = 13;
+            this.lblCredits.Text = "Created by Kyle | Sin Swordborne @ Famfrit [Primal]";
             // 
-            // lblShard1Amount
+            // lblCreditLink
             // 
-            this.lblShard1Amount.AutoSize = true;
-            this.lblShard1Amount.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShard1Amount.Location = new System.Drawing.Point(20, 180);
-            this.lblShard1Amount.Name = "lblShard1Amount";
-            this.lblShard1Amount.Size = new System.Drawing.Size(182, 15);
-            this.lblShard1Amount.TabIndex = 12;
-            this.lblShard1Amount.Text = "Shard 1 Amount Needed:";
+            this.lblCreditLink.AutoSize = true;
+            this.lblCreditLink.Location = new System.Drawing.Point(68, 521);
+            this.lblCreditLink.Name = "lblCreditLink";
+            this.lblCreditLink.Size = new System.Drawing.Size(334, 13);
+            this.lblCreditLink.TabIndex = 14;
+            this.lblCreditLink.TabStop = true;
+            this.lblCreditLink.Text = "https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits";
+            this.lblCreditLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblCreditLink_LinkClicked);
             // 
-            // lblShard2Cost
-            // 
-            this.lblShard2Cost.AutoSize = true;
-            this.lblShard2Cost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblShard2Cost.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShard2Cost.Location = new System.Drawing.Point(15, 215);
-            this.lblShard2Cost.Name = "lblShard2Cost";
-            this.lblShard2Cost.Size = new System.Drawing.Size(105, 17);
-            this.lblShard2Cost.TabIndex = 13;
-            this.lblShard2Cost.Text = "Shard 2 Cost:";
-            // 
-            // lblShard2Amount
-            // 
-            this.lblShard2Amount.AutoSize = true;
-            this.lblShard2Amount.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShard2Amount.Location = new System.Drawing.Point(20, 242);
-            this.lblShard2Amount.Name = "lblShard2Amount";
-            this.lblShard2Amount.Size = new System.Drawing.Size(185, 15);
-            this.lblShard2Amount.TabIndex = 14;
-            this.lblShard2Amount.Text = "Shard 2 Amount Needed:";
-            // 
-            // txtShard1Cost
-            // 
-            this.txtShard1Cost.Location = new System.Drawing.Point(282, 149);
-            this.txtShard1Cost.Name = "txtShard1Cost";
-            this.txtShard1Cost.Size = new System.Drawing.Size(110, 23);
-            this.txtShard1Cost.TabIndex = 5;
-            // 
-            // txtShard1Amount
-            // 
-            this.txtShard1Amount.Location = new System.Drawing.Point(282, 176);
-            this.txtShard1Amount.Name = "txtShard1Amount";
-            this.txtShard1Amount.Size = new System.Drawing.Size(44, 23);
-            this.txtShard1Amount.TabIndex = 6;
-            // 
-            // txtShard2Cost
-            // 
-            this.txtShard2Cost.Location = new System.Drawing.Point(282, 211);
-            this.txtShard2Cost.Name = "txtShard2Cost";
-            this.txtShard2Cost.Size = new System.Drawing.Size(110, 23);
-            this.txtShard2Cost.TabIndex = 7;
-            // 
-            // txtShard2Amount
-            // 
-            this.txtShard2Amount.Location = new System.Drawing.Point(282, 238);
-            this.txtShard2Amount.Name = "txtShard2Amount";
-            this.txtShard2Amount.Size = new System.Drawing.Size(44, 23);
-            this.txtShard2Amount.TabIndex = 8;
-            // 
-            // frmTwoMaterialCost
+            // FrmTwoMaterialCost
             // 
             this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(449, 502);
+            this.CancelButton = this.btnClear;
+            this.ClientSize = new System.Drawing.Size(449, 547);
+            this.Controls.Add(this.lblCreditLink);
+            this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.g_2mats);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmTwoMaterialCost";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FrmTwoMaterialCost";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Final Fantasy XIV - Crafting Profits";
             this.g_2mats.ResumeLayout(false);
             this.g_2mats.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -371,6 +398,8 @@ namespace FinalFantasyXIVCraftingProfits
         private System.Windows.Forms.Label lblShard1Amount;
         private System.Windows.Forms.Label lblShard2Cost;
         private System.Windows.Forms.Label lblShard2Amount;
+        private System.Windows.Forms.Label lblCredits;
+        private System.Windows.Forms.LinkLabel lblCreditLink;
     }
 }
 
