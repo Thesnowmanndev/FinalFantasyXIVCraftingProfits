@@ -8,7 +8,7 @@ The goal of this project was to create an application where I can input costs fo
 
 :heavy_check_mark: 2 Material Screen
 
-![Image of Two Material Screen](https://raw.githubusercontent.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits/master/Images/Two%20Materials%20Required.jpg?token=AHCM3MZK3VXHH3M5EUXWE3DBFPJ5C)
+![Image of Two Material Screen](https://raw.githubusercontent.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits/master/Images/Two%20Materials%20Required.jpg?token=AHCM3M5O2FUARABOXHTD7ZTBFPKRS)
 
 :x: 3 Material Screen
 
