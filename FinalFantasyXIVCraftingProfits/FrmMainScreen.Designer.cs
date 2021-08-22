@@ -33,20 +33,23 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblCredits = new System.Windows.Forms.Label();
             this.lblCreditLink = new System.Windows.Forms.LinkLabel();
             this.gpCraftingProfits = new System.Windows.Forms.GroupBox();
+            this.gpFiveMaterials = new System.Windows.Forms.GroupBox();
+            this.gpFourMaterials = new System.Windows.Forms.GroupBox();
+            this.gpThreeMaterials = new System.Windows.Forms.GroupBox();
+            this.gpTwoMaterials = new System.Windows.Forms.GroupBox();
+            this.TwoMaterialDescription = new System.Windows.Forms.Label();
             this.btn2MaterialCost = new System.Windows.Forms.Button();
+            this.gpOneMaterial = new System.Windows.Forms.GroupBox();
             this.gpQuestsMisc = new System.Windows.Forms.GroupBox();
             this.lblGreeting = new System.Windows.Forms.Label();
             this.lblOption = new System.Windows.Forms.Label();
             this.lblReportLink = new System.Windows.Forms.LinkLabel();
             this.lblSuggestLink = new System.Windows.Forms.LinkLabel();
-            this.gpOneMaterial = new System.Windows.Forms.GroupBox();
-            this.gpTwoMaterials = new System.Windows.Forms.GroupBox();
-            this.gpThreeMaterials = new System.Windows.Forms.GroupBox();
-            this.gpFourMaterials = new System.Windows.Forms.GroupBox();
-            this.gpFiveMaterials = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.OneMaterialDescription = new System.Windows.Forms.Label();
+            this.BtnOneMaterialCalculator = new System.Windows.Forms.Button();
             this.gpCraftingProfits.SuspendLayout();
             this.gpTwoMaterials.SuspendLayout();
+            this.gpOneMaterial.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCredits
@@ -67,7 +70,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblCreditLink.TabIndex = 1;
             this.lblCreditLink.TabStop = true;
             this.lblCreditLink.Text = "https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits";
-            this.lblCreditLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblCreditLink_LinkClicked);
+            this.lblCreditLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblCreditLink_LinkClicked);
             // 
             // gpCraftingProfits
             // 
@@ -83,6 +86,55 @@ namespace FinalFantasyXIVCraftingProfits
             this.gpCraftingProfits.TabStop = false;
             this.gpCraftingProfits.Text = "Crafting Profits";
             // 
+            // gpFiveMaterials
+            // 
+            this.gpFiveMaterials.Location = new System.Drawing.Point(22, 448);
+            this.gpFiveMaterials.Name = "gpFiveMaterials";
+            this.gpFiveMaterials.Size = new System.Drawing.Size(541, 100);
+            this.gpFiveMaterials.TabIndex = 7;
+            this.gpFiveMaterials.TabStop = false;
+            this.gpFiveMaterials.Text = "Five Materials Required";
+            // 
+            // gpFourMaterials
+            // 
+            this.gpFourMaterials.Location = new System.Drawing.Point(22, 341);
+            this.gpFourMaterials.Name = "gpFourMaterials";
+            this.gpFourMaterials.Size = new System.Drawing.Size(541, 100);
+            this.gpFourMaterials.TabIndex = 6;
+            this.gpFourMaterials.TabStop = false;
+            this.gpFourMaterials.Text = "Four Materials Required";
+            // 
+            // gpThreeMaterials
+            // 
+            this.gpThreeMaterials.Location = new System.Drawing.Point(22, 234);
+            this.gpThreeMaterials.Name = "gpThreeMaterials";
+            this.gpThreeMaterials.Size = new System.Drawing.Size(541, 100);
+            this.gpThreeMaterials.TabIndex = 5;
+            this.gpThreeMaterials.TabStop = false;
+            this.gpThreeMaterials.Text = "Three Materials Required";
+            // 
+            // gpTwoMaterials
+            // 
+            this.gpTwoMaterials.Controls.Add(this.TwoMaterialDescription);
+            this.gpTwoMaterials.Controls.Add(this.btn2MaterialCost);
+            this.gpTwoMaterials.Location = new System.Drawing.Point(22, 127);
+            this.gpTwoMaterials.Name = "gpTwoMaterials";
+            this.gpTwoMaterials.Size = new System.Drawing.Size(541, 100);
+            this.gpTwoMaterials.TabIndex = 4;
+            this.gpTwoMaterials.TabStop = false;
+            this.gpTwoMaterials.Text = "Two Materials Required";
+            // 
+            // TwoMaterialDescription
+            // 
+            this.TwoMaterialDescription.AutoSize = true;
+            this.TwoMaterialDescription.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TwoMaterialDescription.Location = new System.Drawing.Point(24, 77);
+            this.TwoMaterialDescription.Name = "TwoMaterialDescription";
+            this.TwoMaterialDescription.Size = new System.Drawing.Size(493, 16);
+            this.TwoMaterialDescription.TabIndex = 1;
+            this.TwoMaterialDescription.Text = "Allows for the user to input material costs and amounts for a max of two material" +
+    "s and a max of two shard slots.";
+            // 
             // btn2MaterialCost
             // 
             this.btn2MaterialCost.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -92,7 +144,18 @@ namespace FinalFantasyXIVCraftingProfits
             this.btn2MaterialCost.TabIndex = 0;
             this.btn2MaterialCost.Text = "Open Calculator";
             this.btn2MaterialCost.UseVisualStyleBackColor = true;
-            this.btn2MaterialCost.Click += new System.EventHandler(this.btn2MaterialCost_Click);
+            this.btn2MaterialCost.Click += new System.EventHandler(this.Btn2MaterialCost_Click);
+            // 
+            // gpOneMaterial
+            // 
+            this.gpOneMaterial.Controls.Add(this.OneMaterialDescription);
+            this.gpOneMaterial.Controls.Add(this.BtnOneMaterialCalculator);
+            this.gpOneMaterial.Location = new System.Drawing.Point(22, 20);
+            this.gpOneMaterial.Name = "gpOneMaterial";
+            this.gpOneMaterial.Size = new System.Drawing.Size(541, 100);
+            this.gpOneMaterial.TabIndex = 3;
+            this.gpOneMaterial.TabStop = false;
+            this.gpOneMaterial.Text = "One Material Required ";
             // 
             // gpQuestsMisc
             // 
@@ -132,7 +195,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblReportLink.TabIndex = 6;
             this.lblReportLink.TabStop = true;
             this.lblReportLink.Text = "Report An Issue";
-            this.lblReportLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblReportLink_LinkClicked);
+            this.lblReportLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblReportLink_LinkClicked);
             // 
             // lblSuggestLink
             // 
@@ -143,65 +206,29 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblSuggestLink.TabIndex = 7;
             this.lblSuggestLink.TabStop = true;
             this.lblSuggestLink.Text = "Suggest a Feature";
-            this.lblSuggestLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblSuggestLink_LinkClicked);
+            this.lblSuggestLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblSuggestLink_LinkClicked);
             // 
-            // gpOneMaterial
+            // OneMaterialDescription
             // 
-            this.gpOneMaterial.Location = new System.Drawing.Point(22, 20);
-            this.gpOneMaterial.Name = "gpOneMaterial";
-            this.gpOneMaterial.Size = new System.Drawing.Size(541, 100);
-            this.gpOneMaterial.TabIndex = 3;
-            this.gpOneMaterial.TabStop = false;
-            this.gpOneMaterial.Text = "One Material Required ";
+            this.OneMaterialDescription.AutoSize = true;
+            this.OneMaterialDescription.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OneMaterialDescription.Location = new System.Drawing.Point(24, 71);
+            this.OneMaterialDescription.Name = "OneMaterialDescription";
+            this.OneMaterialDescription.Size = new System.Drawing.Size(488, 16);
+            this.OneMaterialDescription.TabIndex = 3;
+            this.OneMaterialDescription.Text = "Allows for the user to input material costs and amounts for a max of one material" +
+    " and a max of two shard slots.";
             // 
-            // gpTwoMaterials
+            // BtnOneMaterialCalculator
             // 
-            this.gpTwoMaterials.Controls.Add(this.label1);
-            this.gpTwoMaterials.Controls.Add(this.btn2MaterialCost);
-            this.gpTwoMaterials.Location = new System.Drawing.Point(22, 127);
-            this.gpTwoMaterials.Name = "gpTwoMaterials";
-            this.gpTwoMaterials.Size = new System.Drawing.Size(541, 100);
-            this.gpTwoMaterials.TabIndex = 4;
-            this.gpTwoMaterials.TabStop = false;
-            this.gpTwoMaterials.Text = "Two Materials Required";
-            // 
-            // gpThreeMaterials
-            // 
-            this.gpThreeMaterials.Location = new System.Drawing.Point(22, 234);
-            this.gpThreeMaterials.Name = "gpThreeMaterials";
-            this.gpThreeMaterials.Size = new System.Drawing.Size(541, 100);
-            this.gpThreeMaterials.TabIndex = 5;
-            this.gpThreeMaterials.TabStop = false;
-            this.gpThreeMaterials.Text = "Three Materials Required";
-            // 
-            // gpFourMaterials
-            // 
-            this.gpFourMaterials.Location = new System.Drawing.Point(22, 341);
-            this.gpFourMaterials.Name = "gpFourMaterials";
-            this.gpFourMaterials.Size = new System.Drawing.Size(541, 100);
-            this.gpFourMaterials.TabIndex = 6;
-            this.gpFourMaterials.TabStop = false;
-            this.gpFourMaterials.Text = "Four Materials Required";
-            // 
-            // gpFiveMaterials
-            // 
-            this.gpFiveMaterials.Location = new System.Drawing.Point(22, 448);
-            this.gpFiveMaterials.Name = "gpFiveMaterials";
-            this.gpFiveMaterials.Size = new System.Drawing.Size(541, 100);
-            this.gpFiveMaterials.TabIndex = 7;
-            this.gpFiveMaterials.TabStop = false;
-            this.gpFiveMaterials.Text = "Five Materials Required";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(493, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Allows for the user to input material costs and amounts for a max of two material" +
-    "s and a max of two shard slots.";
+            this.BtnOneMaterialCalculator.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnOneMaterialCalculator.Location = new System.Drawing.Point(186, 13);
+            this.BtnOneMaterialCalculator.Name = "BtnOneMaterialCalculator";
+            this.BtnOneMaterialCalculator.Size = new System.Drawing.Size(159, 52);
+            this.BtnOneMaterialCalculator.TabIndex = 2;
+            this.BtnOneMaterialCalculator.Text = "Open Calculator";
+            this.BtnOneMaterialCalculator.UseVisualStyleBackColor = true;
+            this.BtnOneMaterialCalculator.Click += new System.EventHandler(this.BtnOneMaterialCalculator_Click);
             // 
             // FrmMainScreen
             // 
@@ -226,6 +253,8 @@ namespace FinalFantasyXIVCraftingProfits
             this.gpCraftingProfits.ResumeLayout(false);
             this.gpTwoMaterials.ResumeLayout(false);
             this.gpTwoMaterials.PerformLayout();
+            this.gpOneMaterial.ResumeLayout(false);
+            this.gpOneMaterial.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,6 +276,8 @@ namespace FinalFantasyXIVCraftingProfits
         private System.Windows.Forms.GroupBox gpOneMaterial;
         private System.Windows.Forms.GroupBox gpFiveMaterials;
         private System.Windows.Forms.GroupBox gpFourMaterials;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label TwoMaterialDescription;
+        private System.Windows.Forms.Label OneMaterialDescription;
+        private System.Windows.Forms.Button BtnOneMaterialCalculator;
     }
 }
