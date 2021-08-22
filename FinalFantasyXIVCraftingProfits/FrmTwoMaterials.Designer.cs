@@ -339,7 +339,6 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblCreditLink.Name = "lblCreditLink";
             this.lblCreditLink.Size = new System.Drawing.Size(334, 13);
             this.lblCreditLink.TabIndex = 14;
-            this.lblCreditLink.TabStop = true;
             this.lblCreditLink.Text = "https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits";
             this.lblCreditLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblCreditLink_LinkClicked);
             // 

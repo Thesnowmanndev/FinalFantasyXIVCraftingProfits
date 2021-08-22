@@ -89,28 +89,28 @@ namespace FinalFantasyXIVCraftingProfits
             this.txtShard2Amount.Location = new System.Drawing.Point(282, 179);
             this.txtShard2Amount.Name = "txtShard2Amount";
             this.txtShard2Amount.Size = new System.Drawing.Size(44, 20);
-            this.txtShard2Amount.TabIndex = 29;
+            this.txtShard2Amount.TabIndex = 6;
             // 
             // txtShard2Cost
             // 
             this.txtShard2Cost.Location = new System.Drawing.Point(282, 152);
             this.txtShard2Cost.Name = "txtShard2Cost";
             this.txtShard2Cost.Size = new System.Drawing.Size(110, 20);
-            this.txtShard2Cost.TabIndex = 28;
+            this.txtShard2Cost.TabIndex = 5;
             // 
             // txtShard1Amount
             // 
             this.txtShard1Amount.Location = new System.Drawing.Point(282, 117);
             this.txtShard1Amount.Name = "txtShard1Amount";
             this.txtShard1Amount.Size = new System.Drawing.Size(44, 20);
-            this.txtShard1Amount.TabIndex = 27;
+            this.txtShard1Amount.TabIndex = 4;
             // 
             // txtShard1Cost
             // 
             this.txtShard1Cost.Location = new System.Drawing.Point(282, 90);
             this.txtShard1Cost.Name = "txtShard1Cost";
             this.txtShard1Cost.Size = new System.Drawing.Size(110, 20);
-            this.txtShard1Cost.TabIndex = 26;
+            this.txtShard1Cost.TabIndex = 3;
             // 
             // txtMaterialCost
             // 
@@ -126,7 +126,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.txtISellsFor.Location = new System.Drawing.Point(282, 332);
             this.txtISellsFor.Name = "txtISellsFor";
             this.txtISellsFor.Size = new System.Drawing.Size(135, 20);
-            this.txtISellsFor.TabIndex = 31;
+            this.txtISellsFor.TabIndex = 7;
             // 
             // txtTotalProfit
             // 
@@ -142,14 +142,14 @@ namespace FinalFantasyXIVCraftingProfits
             this.txtMat1Cost.Location = new System.Drawing.Point(282, 28);
             this.txtMat1Cost.Name = "txtMat1Cost";
             this.txtMat1Cost.Size = new System.Drawing.Size(110, 20);
-            this.txtMat1Cost.TabIndex = 24;
+            this.txtMat1Cost.TabIndex = 1;
             // 
             // txtMat1Amount
             // 
             this.txtMat1Amount.Location = new System.Drawing.Point(282, 55);
             this.txtMat1Amount.Name = "txtMat1Amount";
             this.txtMat1Amount.Size = new System.Drawing.Size(44, 20);
-            this.txtMat1Amount.TabIndex = 25;
+            this.txtMat1Amount.TabIndex = 2;
             // 
             // lblMat1Cost
             // 
@@ -251,7 +251,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.BtnCalculate.Location = new System.Drawing.Point(12, 464);
             this.BtnCalculate.Name = "BtnCalculate";
             this.BtnCalculate.Size = new System.Drawing.Size(135, 43);
-            this.BtnCalculate.TabIndex = 1;
+            this.BtnCalculate.TabIndex = 8;
             this.BtnCalculate.Text = "&Calculate";
             this.BtnCalculate.UseVisualStyleBackColor = true;
             this.BtnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
@@ -263,8 +263,8 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblCreditLink.Name = "lblCreditLink";
             this.lblCreditLink.Size = new System.Drawing.Size(334, 13);
             this.lblCreditLink.TabIndex = 16;
-            this.lblCreditLink.TabStop = true;
             this.lblCreditLink.Text = "https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits";
+            this.lblCreditLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblCreditLink_LinkClicked);
             // 
             // lblCredits
             // 
@@ -281,7 +281,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.btnExit.Location = new System.Drawing.Point(295, 464);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(135, 43);
-            this.btnExit.TabIndex = 18;
+            this.btnExit.TabIndex = 10;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
@@ -293,7 +293,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.btnClear.Location = new System.Drawing.Point(154, 464);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(135, 43);
-            this.btnClear.TabIndex = 17;
+            this.btnClear.TabIndex = 9;
             this.btnClear.Text = "C&lear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);

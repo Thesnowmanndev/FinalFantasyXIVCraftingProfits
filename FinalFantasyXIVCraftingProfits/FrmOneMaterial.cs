@@ -185,5 +185,10 @@ namespace FinalFantasyXIVCraftingProfits
             _totalProfitFormatted = $"{_totalProfit:#,0}";
             txtTotalProfit.Text = _totalProfitFormatted;
         }
+
+        private void LblCreditLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits");
+        }
     }
 }
