@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace FinalFantasyXIVCraftingProfits
@@ -25,12 +26,15 @@ namespace FinalFantasyXIVCraftingProfits
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
-        private void btnCalculate_Click(object sender, EventArgs e)
+
+        private void BtnCalculate_Click(object sender, EventArgs e)
         {
+            CatchFormErrors();
+
             _materialOneCost = Convert.ToInt32(txtMat1Cost.Text);
             _materialOneAmountNeeded = Convert.ToInt32(txtMat1Amount.Text);
             _materialTwoCost = Convert.ToInt32(txtMat2Cost.Text);
@@ -41,6 +45,8 @@ namespace FinalFantasyXIVCraftingProfits
             _shardTwoCost = Convert.ToInt32(txtShard2Cost.Text);
             _shardTwoAmountNeeded = Convert.ToInt32(txtShard2Amount.Text);
 
+
+
             _materialTotalCost = (_materialOneCost * _materialOneAmountNeeded) +
                                 (_materialTwoCost * _materialTwoAmountNeeded) +
                                 (_shardOneCost * _shardOneAmountNeeded) +
@@ -48,16 +54,120 @@ namespace FinalFantasyXIVCraftingProfits
 
             _itemSellsFor = Convert.ToInt32(txtISellsFor.Text);
 
-            _matTotalCostFormatted = string.Format("{0:#,0}", _materialTotalCost);
+            _matTotalCostFormatted = $"{_materialTotalCost:#,0}";
             txtMaterialCost.Text = _matTotalCostFormatted;
 
             _totalProfit = _itemSellsFor - _materialTotalCost;
 
-            _totalProfitFormatted = string.Format("{0:#,0}", _totalProfit);
+            _totalProfitFormatted = $"{_totalProfit:#,0}";
             txtTotalProfit.Text = _totalProfitFormatted;
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void CatchFormErrors()
+        {
+            const string zero = "0";
+            var matOneCostDigitsOnly = txtMat1Cost.Text.All(char.IsDigit);
+            var matOneAmountDigitsOnly = txtMat1Amount.Text.All(char.IsDigit);
+            var matTwoCostDigitsOnly = txtMat2Cost.Text.All(char.IsDigit);
+            var matTwoAmountDigitsOnly = txtMat2Amount.Text.All(char.IsDigit);
+            var shardOneCostDigitsOnly = txtShard1Cost.Text.All(char.IsDigit);
+            var shardOneAmountDigitsOnly = txtShard1Amount.Text.All(char.IsDigit);
+            var shardTwoCostDigitsOnly = txtShard2Cost.Text.All(char.IsDigit);
+            var shardTwoAmountDigitsOnly = txtShard2Amount.Text.All(char.IsDigit);
+            var iSellsForDigitsOnly = txtISellsFor.Text.All(char.IsDigit);
+
+            if (!matOneCostDigitsOnly)
+            {
+                txtMat1Cost.Text = zero;
+            }
+
+            if (!matOneAmountDigitsOnly)
+            {
+                txtMat1Amount.Text = zero;
+            }
+
+            if (!matTwoCostDigitsOnly)
+            {
+                txtMat2Cost.Text = zero;
+            }
+
+            if (!matTwoAmountDigitsOnly)
+            {
+                txtMat2Amount.Text = zero;
+            }
+
+            if (!shardOneCostDigitsOnly)
+            {
+                txtShard1Cost.Text = zero;
+            }
+
+            if (!shardOneAmountDigitsOnly)
+            {
+                txtShard1Amount.Text = zero;
+            }
+
+            if (!shardTwoCostDigitsOnly)
+            {
+                txtShard2Cost.Text = zero;
+            }
+
+            if (!shardTwoAmountDigitsOnly)
+            {
+                txtShard2Amount.Text = zero;
+            }
+
+            if (!iSellsForDigitsOnly)
+            {
+                txtISellsFor.Text = zero;
+            }
+
+            if (txtMat1Cost.Text != null && txtMat1Cost.Text == "")
+            {
+                txtMat1Cost.Text = zero;
+            }
+
+            if (txtMat1Amount.Text != null && txtMat1Amount.Text == "")
+            {
+                txtMat1Amount.Text = zero;
+            }
+
+            if (txtMat2Cost.Text != null && txtMat2Cost.Text == "")
+            {
+                txtMat2Cost.Text = zero;
+            }
+
+            if (txtMat2Amount.Text != null && txtMat2Amount.Text == "")
+            {
+                txtMat2Amount.Text = zero;
+            }
+
+            if (txtShard1Cost.Text != null && txtShard1Cost.Text == "")
+            {
+                txtShard1Cost.Text = zero;
+            }
+
+            if (txtShard1Amount.Text != null && txtShard1Amount.Text == "")
+            {
+                txtShard1Amount.Text = zero;
+            }
+
+            if (txtShard2Cost.Text != null && txtShard2Cost.Text == "")
+            {
+                txtShard2Cost.Text = zero;
+            }
+
+            if (txtShard2Amount.Text != null && txtShard2Amount.Text == "")
+            {
+                txtShard2Amount.Text = zero;
+            }
+
+            if (txtISellsFor.Text != null && txtISellsFor.Text == "")
+            {
+                txtISellsFor.Text = zero;
+            }
+        }
+
+        private void BtnClear_Click(object sender, EventArgs e)
         {
             txtMat1Cost.Text = string.Empty;
             txtMat1Amount.Text = string.Empty;
@@ -72,7 +182,7 @@ namespace FinalFantasyXIVCraftingProfits
             txtTotalProfit.Text = string.Empty;
         }
 
-        private void lblCreditLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LblCreditLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits");
         }

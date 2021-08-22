@@ -298,7 +298,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.btnCalculate.TabIndex = 10;
             this.btnCalculate.Text = "&Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            this.btnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
             // 
             // btnClear
             // 
@@ -310,7 +310,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.btnClear.TabIndex = 11;
             this.btnClear.Text = "C&lear";
             this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // btnExit
             // 
@@ -321,7 +321,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.btnExit.TabIndex = 12;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // lblCredits
             // 
@@ -341,7 +341,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblCreditLink.TabIndex = 14;
             this.lblCreditLink.TabStop = true;
             this.lblCreditLink.Text = "https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits";
-            this.lblCreditLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblCreditLink_LinkClicked);
+            this.lblCreditLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblCreditLink_LinkClicked);
             // 
             // FrmTwoMaterialCost
             // 
