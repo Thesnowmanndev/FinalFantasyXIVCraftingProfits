@@ -6,14 +6,18 @@ The goal of this project was to create an application where I can input costs fo
 
 :x: Main Screen
 
-:heavy_check_mark: 2 Material Screen
+:heavy_check_mark: One Material Screen
+
+![Image of One Material Screen](https://raw.githubusercontent.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits/master/Images/One%20Material%20Required.jpg?token=AHCM3M56U4Q7E3CQYOUUBJTBFQGKQ)
+
+:heavy_check_mark: Two Materials Screen
 
 ![Image of Two Material Screen](https://raw.githubusercontent.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits/master/Images/Two%20Materials%20Required.jpg?token=AHCM3M5O2FUARABOXHTD7ZTBFPKRS)
 
-:x: 3 Material Screen
+:x: Three Materials Screen
 
-:x: 4 Material Screen
+:x: Four Materials Screen
 
-:x: 5 Material Screen
+:x: Five Materials Screen
 
 :x: LeveQuest Screen
