@@ -4,6 +4,8 @@ Simple Crafting Calculator for Discipline of Hand crafts in the MMORPG Final Fan
 ## About 
 The goal of this project was to create an application where I can input costs for materials, amount needed, and how much the item sells for and have it calculate the suspected total profit to help decide if it is worth it. Currently the screens I have completed are:
 
+:x: Main Screen
+
 :heavy_check_mark: 2 Material Screen
 
 :x: 3 Material Screen
