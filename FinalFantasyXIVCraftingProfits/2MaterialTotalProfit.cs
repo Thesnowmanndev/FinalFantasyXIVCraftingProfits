@@ -165,6 +165,51 @@ namespace FinalFantasyXIVCraftingProfits
             {
                 txtISellsFor.Text = zero;
             }
+
+            if (txtMat1Cost.Text == null)
+            {
+                txtMat1Cost.Text = zero;
+            }
+
+            if (txtMat1Amount.Text == null)
+            {
+                txtMat1Amount.Text = zero;
+            }
+
+            if (txtMat2Cost.Text == null)
+            {
+                txtMat2Cost.Text = zero;
+            }
+
+            if (txtMat2Amount.Text == null)
+            {
+                txtMat2Amount.Text = zero;
+            }
+
+            if (txtShard1Cost.Text == null)
+            {
+                txtShard1Cost.Text = zero;
+            }
+
+            if (txtShard1Amount.Text == null)
+            {
+                txtShard1Amount.Text = zero;
+            }
+
+            if (txtShard2Cost.Text == null)
+            {
+                txtShard2Cost.Text = zero;
+            }
+
+            if (txtShard2Amount.Text == null)
+            {
+                txtShard2Amount.Text = zero;
+            }
+
+            if (txtISellsFor.Text == null)
+            {
+                txtISellsFor.Text = zero;
+            }
         }
 
         private void BtnClear_Click(object sender, EventArgs e)
