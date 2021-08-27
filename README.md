@@ -12,11 +12,11 @@ Currently the screens I have completed are:
 
 :heavy_check_mark: One Material Screen
 
-![Image of One Material Screen](https://raw.githubusercontent.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits/master/Images/One%20Material%20Required.jpg?token=AHCM3M56U4Q7E3CQYOUUBJTBFQGKQ)
+![Image of One Material Screen](https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits/blob/master/Images/One%20Material%20Required.jpg?raw=true)
 
 :heavy_check_mark: Two Materials Screen
 
-![Image of Two Material Screen](https://raw.githubusercontent.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits/master/Images/Two%20Materials%20Required.jpg?token=AHCM3M5O2FUARABOXHTD7ZTBFPKRS)
+![Image of Two Material Screen](https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits/blob/master/Images/Two%20Materials%20Required.jpg?raw=true)
 
 :x: Three Materials Screen
 
