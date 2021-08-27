@@ -50,7 +50,10 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblOption = new System.Windows.Forms.Label();
             this.lblReportLink = new System.Windows.Forms.LinkLabel();
             this.lblSuggestLink = new System.Windows.Forms.LinkLabel();
+            this.Btn5MaterialCost = new System.Windows.Forms.Button();
+            this.FiveMaterialDescription = new System.Windows.Forms.Label();
             this.gpCraftingProfits.SuspendLayout();
+            this.gpFiveMaterials.SuspendLayout();
             this.gpTwoMaterials.SuspendLayout();
             this.gpOneMaterial.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +74,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblCreditLink.Name = "lblCreditLink";
             this.lblCreditLink.Size = new System.Drawing.Size(334, 13);
             this.lblCreditLink.TabIndex = 1;
+            this.lblCreditLink.TabStop = true;
             this.lblCreditLink.Text = "https://github.com/Thesnowmanndev/FinalFantasyXIVCraftingProfits";
             this.lblCreditLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblCreditLink_LinkClicked);
             // 
@@ -90,6 +94,8 @@ namespace FinalFantasyXIVCraftingProfits
             // 
             // gpFiveMaterials
             // 
+            this.gpFiveMaterials.Controls.Add(this.FiveMaterialDescription);
+            this.gpFiveMaterials.Controls.Add(this.Btn5MaterialCost);
             this.gpFiveMaterials.Location = new System.Drawing.Point(22, 448);
             this.gpFiveMaterials.Name = "gpFiveMaterials";
             this.gpFiveMaterials.Size = new System.Drawing.Size(541, 100);
@@ -217,6 +223,7 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblReportLink.Name = "lblReportLink";
             this.lblReportLink.Size = new System.Drawing.Size(83, 13);
             this.lblReportLink.TabIndex = 6;
+            this.lblReportLink.TabStop = true;
             this.lblReportLink.Text = "Report An Issue";
             this.lblReportLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblReportLink_LinkClicked);
             // 
@@ -227,8 +234,31 @@ namespace FinalFantasyXIVCraftingProfits
             this.lblSuggestLink.Name = "lblSuggestLink";
             this.lblSuggestLink.Size = new System.Drawing.Size(94, 13);
             this.lblSuggestLink.TabIndex = 7;
+            this.lblSuggestLink.TabStop = true;
             this.lblSuggestLink.Text = "Suggest a Feature";
             this.lblSuggestLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblSuggestLink_LinkClicked);
+            // 
+            // Btn5MaterialCost
+            // 
+            this.Btn5MaterialCost.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn5MaterialCost.Location = new System.Drawing.Point(191, 24);
+            this.Btn5MaterialCost.Name = "Btn5MaterialCost";
+            this.Btn5MaterialCost.Size = new System.Drawing.Size(159, 52);
+            this.Btn5MaterialCost.TabIndex = 3;
+            this.Btn5MaterialCost.Text = "Open Calculator";
+            this.Btn5MaterialCost.UseVisualStyleBackColor = true;
+            this.Btn5MaterialCost.Click += new System.EventHandler(this.Btn5MaterialCost_Click);
+            // 
+            // FiveMaterialDescription
+            // 
+            this.FiveMaterialDescription.AutoSize = true;
+            this.FiveMaterialDescription.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FiveMaterialDescription.Location = new System.Drawing.Point(24, 79);
+            this.FiveMaterialDescription.Name = "FiveMaterialDescription";
+            this.FiveMaterialDescription.Size = new System.Drawing.Size(493, 16);
+            this.FiveMaterialDescription.TabIndex = 4;
+            this.FiveMaterialDescription.Text = "Allows for the user to input material costs and amounts for a max of two material" +
+    "s and a max of two shard slots.";
             // 
             // FrmMainScreen
             // 
@@ -251,6 +281,8 @@ namespace FinalFantasyXIVCraftingProfits
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Final Fantasy XIV - Crafting Profits";
             this.gpCraftingProfits.ResumeLayout(false);
+            this.gpFiveMaterials.ResumeLayout(false);
+            this.gpFiveMaterials.PerformLayout();
             this.gpTwoMaterials.ResumeLayout(false);
             this.gpTwoMaterials.PerformLayout();
             this.gpOneMaterial.ResumeLayout(false);
@@ -279,5 +311,7 @@ namespace FinalFantasyXIVCraftingProfits
         private System.Windows.Forms.Label TwoMaterialDescription;
         private System.Windows.Forms.Label OneMaterialDescription;
         private System.Windows.Forms.Button BtnOneMaterialCalculator;
+        private Label FiveMaterialDescription;
+        private Button Btn5MaterialCost;
     }
 }

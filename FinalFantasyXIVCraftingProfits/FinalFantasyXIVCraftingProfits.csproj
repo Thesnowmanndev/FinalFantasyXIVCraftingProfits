@@ -23,8 +23,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>0.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -88,6 +88,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmFiveMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiveMaterial.Designer.cs">
+      <DependentUpon>FrmFiveMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmOneMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmFiveMaterial.resx">
+      <DependentUpon>FrmFiveMaterial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmOneMaterial.resx">
       <DependentUpon>FrmOneMaterial.cs</DependentUpon>
     </EmbeddedResource>

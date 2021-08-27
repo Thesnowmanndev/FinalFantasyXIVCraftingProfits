@@ -36,5 +36,11 @@ namespace FinalFantasyXIVCraftingProfits
             Form frmTwoMaterialCost = new FrmTwoMaterials();
             frmTwoMaterialCost.Show();
         }
+
+        private void Btn5MaterialCost_Click(object sender, EventArgs e)
+        {
+            Form frmFiveMaterialCost = new FrmFiveMaterial();
+            frmFiveMaterialCost.Show();
+        }
     }
 }
